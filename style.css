@@ -6,3 +6,6 @@ description: Hair Focus Salon 2026 is a modern and stylish WordPress theme desig
 version: 1.0.0
 license: GNU General Public License v2 or later
 */
+
+@import './assets/css/theme.css';
+@import './assets/css/header.css';
