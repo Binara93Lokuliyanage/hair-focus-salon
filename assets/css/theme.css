@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --hf-color-navy: #0D1728;
+    --hf-color-burgundy: #A4261B;
+    --hf-color-gold: #B79561;
+    --hf-color-white: #fff;
+    --hf-color-black: #171B22;
+    --hf-color-border: #DDD4CC;
+    --hf-color-background: #FFFDFC;
+    --hf-color-background-secondary: #F6F1EC;
+    --hf-color-background-dark: #0D1728;
+    --hf-font-size: 1rem;
+    --hf-font-size-lg: 1.125rem;
+    --hf-font-size-xl: 1.25rem;
+    --hf-font-size-sm: 0.875rem;
+    --hf-font-size-xs: 0.75rem;
+    --hf-font-size-2xs: 0.625rem;
+    --hf-font-heading: Lora, serif;
+    --hf-font-body: Inter, sans-serif;
+    --hf-padding-top: 6rem;
+    --hf-padding-bottom: 4rem;
+    --hf-transition: all 0.3s ease-in-out;
+    --hf-shadow: 0px 8px 24px 0px rgba(37,20,12,0.10196);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--hf-font-size);
+}
+
+body {
+  margin: 0;
+  font-family: var(--hf-font-body);
+  font-size: var(--hf-font-size);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--hf-transition);
+}
+
+h1, .h1 {
+  font-size: 3.75rem;
+  font-family: var(--hf-font-heading);
+  font-weight: 400;
+}
+
+h2, .h2 {
+  font-size: 2.75rem;
+  font-family: var(--hf-font-heading);
+  font-weight: 400;
+}
+
+h3, .h3 {
+  font-size: 1.875rem;
+  font-family: var(--hf-font-heading);
+  font-weight: 400;
+}
+
+h4, .h4 {
+  font-size: 1.25rem;
+  font-family: var(--hf-font-heading);
+  font-weight: 400;
+}
+
+.h1, .h2, .h3, .h4,
+h1, h2, h3, h4 {
+ margin-top: 0;
+ line-height: 102%
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+ul {
+  list-style-type: none; 
+  padding: 0;            
+  margin: 0;            
+}
+
+.btn {
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: var(--hf-font-body);
+  font-size: var(--hf-font-size-sm);
+  transition: var(--hf-transition);
+  font-weight: 200;
+}
+
+.btn img {
+  transition: var(--hf-transition);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:hover img {
+  transform: translateX(0.2rem);
+}
+
+
+.btn-primary {
+  background-color: var(--hf-color-burgundy);
+  color: var(--hf-color-white);
+  border: 1px solid var(--hf-color-burgundy);
+}
+
+.btn-primary:hover { 
+  background-color: color-mix(in srgb, var(--hf-color-burgundy) 90%, transparent); 
+}
+
+.btn-secondary {
+  background-color: var(--hf-color-white);
+  color: var(--hf-color-black);
+  border: 1px solid var(--hf-color-border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--hf-color-burgundy);
+  color: var(--hf-color-white);
+}
+
+.bg-primary {
+  background-color: var(--hf-color-background);
+}
+
+.bg-secondary {
+  background-color: var(--hf-color-background-secondary);
+}
+
+.bg-dark {
+  background-color: var(--hf-color-background-dark);
+}
