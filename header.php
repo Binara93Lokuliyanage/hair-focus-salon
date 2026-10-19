@@ -51,14 +51,14 @@ if (!defined('ABSPATH')) {
 				<div class="menu-toggle__bar"></div>
 			</div>
 		</div>
-		<div class="mobile-nav">
+		<!-- <div class="mobile-nav"> -->
 			<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'primary',
-						'menu_id' => 'primary-menu',
-					)
-				);
+				// wp_nav_menu(
+				// 	array(
+				// 		'theme_location' => 'primary',
+				// 		'menu_id' => 'primary-menu',
+				// 	)
+				// );
 				?>
-		</div>
+		<!-- </div> -->
 	</header>
