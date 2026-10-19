@@ -227,3 +227,15 @@ li {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+.owl-stage-outer {
+  height: 100%;
+}
+
+.owl-stage {
+  height: 100%;
+}
+
+.owl-item {
+  height: 100%;
+}

@@ -19,13 +19,35 @@
     overflow: hidden;
 }
 
+.home-hero__slide {
+    height: 100%;
+}
+
 .home-hero__slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Responsive Styles */
+@media (max-width: 1205px) {
+    .home-hero {
+        grid-template-columns: 3fr 4fr;
+    }
 
+}
 
+@media (max-width: 1066px) {
+    .home-hero {
+        grid-template-columns: 1fr 1fr;
+    }
 
+}
 
+@media (max-width: 796px) {
+    .home-hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}

@@ -12,7 +12,7 @@ get_header();
     <div class="container home-hero">
         <div class="home-hero__content">
             <p class="eyebrow">Your local hair experts</p>
-            <h1 class="home-hero__title">Your hair. Your moment.</h1>
+            <h1 class="home-hero__title">Your hair.<br> Your moment.</h1>
             <p class="home-hero__description">Fearless. Fabulous. Fresh. Hair, beauty and moments of calm in Clayton and
                 Cranbourne West.</p>
             <div class="home-hero__buttons-wrapper">
@@ -35,7 +35,7 @@ get_header();
 
             <!-- Slide 2 -->
             <div class="home-hero__slide">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-banner.png" alt="Hero Banner">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-2.png" alt="Hero Banner">
             </div>
 
             <!-- Slide 3 -->
