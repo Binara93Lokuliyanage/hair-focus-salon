@@ -50,5 +50,58 @@ get_header();
     </div>
 </section>
 
+<section class="section-padding-top section-padding-bottom bg-primary">
+    <div class = "container">
+        <div class = "title-wrapper">
+            <p class="eyebrow">Your local hair experts</p>
+            <h2 class="home-hero__title">Our Services</h2>
+        </div>
+        <div class = "services-wrapper col-3">
+            <div class = "card service-card">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-2.png" alt="Hero Banner">
+                <div class = "service-card__content">
+                    <h4>Hair & Styling</h4>
+                    <p>Expert cuts, colors, blowouts, and styling services to create modern looks, from sleek bobs to voluminous waves—tailored to your lifestyle and personality.</p>
+                </div>
+            </div>
+            <div class = "card service-card">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-2.png" alt="Hero Banner">
+                <div class = "service-card__content">
+                    <h4>Hair & Styling</h4>
+                    <p>Expert cuts, colors, blowouts, and styling services to create modern looks, from sleek bobs to voluminous waves—tailored to your lifestyle and personality.</p>
+                </div>
+            </div>
+            <div class = "card service-card">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-2.png" alt="Hero Banner">
+                <div class = "service-card__content">
+                    <h4>Hair & Styling</h4>
+                    <p>Expert cuts, colors, blowouts, and styling services to create modern looks, from sleek bobs to voluminous waves—tailored to your lifestyle and personality.</p>
+                </div>
+            </div>
+            <div class = "card service-card">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-2.png" alt="Hero Banner">
+                <div class = "service-card__content">
+                    <h4>Hair & Styling</h4>
+                    <p>Expert cuts, colors, blowouts, and styling services to create modern looks, from sleek bobs to voluminous waves—tailored to your lifestyle and personality.</p>
+                </div>
+            </div>
+            <div class = "card service-card">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-2.png" alt="Hero Banner">
+                <div class = "service-card__content">
+                    <h4>Hair & Styling</h4>
+                    <p>Expert cuts, colors, blowouts, and styling services to create modern looks, from sleek bobs to voluminous waves—tailored to your lifestyle and personality.</p>
+                </div>
+            </div>
+            <div class = "card service-card">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-hero-2.png" alt="Hero Banner">
+                <div class = "service-card__content">
+                    <h4>Hair & Styling</h4>
+                    <p>Expert cuts, colors, blowouts, and styling services to create modern looks, from sleek bobs to voluminous waves—tailored to your lifestyle and personality.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 get_footer();

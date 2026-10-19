@@ -26,7 +26,27 @@
 .home-hero__slide img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     object-fit: cover;
+}
+
+/* Service styles */
+
+.service-card img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.service-card__content p {
+    font-size: var(--hf-size-font-xs);
 }
 
 /* Responsive Styles */
@@ -48,6 +68,14 @@
     .home-hero {
         display: flex;
         flex-direction: column-reverse;
+    }
+    
+
+}
+
+@media (max-width: 450px) {
+    .home-hero__buttons-wrapper {
+        flex-direction: column;
     }
 
 }
