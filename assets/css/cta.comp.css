@@ -1,0 +1,22 @@
+.comp-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.comp-cta .eyebrow{
+    color: var(--hf-color-gold);
+}
+
+.comp-cta h3,
+.comp-cta h4,
+.comp-cta h2 {
+    color: var(--hf-color-white);
+}
+
+.comp-cta p {
+    max-width: 800px;
+}
