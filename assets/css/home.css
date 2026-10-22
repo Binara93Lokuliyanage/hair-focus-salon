@@ -1,0 +1,141 @@
+.home-hero {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+.home-hero__content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    gap: 1.2rem;
+}
+
+.home-hero__buttons-wrapper {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.home-hero__slider {
+    overflow: hidden;
+}
+
+.home-hero__slide {
+    height: 100%;
+}
+
+.home-hero__slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.home-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Service styles */
+
+.service-card {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.service-card img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  transition: var(--hf-transition);
+}
+
+.service-card:hover img{
+  transform: scale(1.01);
+  /* box-shadow: var(--hf-shadow-hover); */
+}
+
+.service-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.service-card__content p {
+    font-size: var(--hf-size-font-xs);
+}
+
+/* Branches Styling */
+
+.branch-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1.25rem; */
+}
+
+.branch-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--hf-transition);
+}
+
+.branch-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+}
+
+.branch-card:hover img {   
+  transform: scale(1.01);
+}
+
+.branch-card:hover .btn-cta {
+    gap: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1205px) {
+    .home-hero {
+        grid-template-columns: 3fr 4fr;
+    }
+
+}
+
+@media (max-width: 1066px) {
+    .home-hero {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 796px) {
+    .home-hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    .home-hero__buttons-wrapper {
+        flex-direction: column;
+    }
+
+    .branch-card__content {
+        padding: 1rem;
+    }
+
+    .branch-card {
+    grid-template-columns: 1fr;
+    /* gap: 1.25rem; */
+    }
+
+}
