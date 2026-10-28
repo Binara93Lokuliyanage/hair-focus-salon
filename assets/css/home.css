@@ -36,39 +36,7 @@
     align-items: center;
 }
 
-/* Service styles */
 
-.service-card {
-    display: flex;
-    padding: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    padding: 1rem;
-}
-
-.service-card img {
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  transition: var(--hf-transition);
-}
-
-.service-card:hover img{
-  transform: scale(1.01);
-  /* box-shadow: var(--hf-shadow-hover); */
-}
-
-.service-card__content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.service-card__content p {
-    font-size: var(--hf-size-font-xs);
-}
 
 /* Branches Styling */
 
