@@ -7,8 +7,49 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileNav.classList.toggle('active');
     });
 
+   
 
-    
+
+});
+
+
+
+const servicePriceToggles = document.querySelectorAll(
+    '.service-pricing__item-title-wrapper'
+);
+
+servicePriceToggles.forEach(toggle => {
+    toggle.addEventListener('click', function () {
+
+        const subList = document.getElementById(this.id + '-sub');
+        if (!subList) return;
+
+        // Check whether clicked item is already active
+        const isActive = this.classList.contains('active');
+
+        // Close all currently active items
+        servicePriceToggles.forEach(item => {
+            item.classList.remove('active');
+
+            const content = document.getElementById(item.id + '-sub');
+
+            if (content) {
+                content.classList.remove('active');
+            }
+        });
+
+        // Open clicked item only if it was previously closed
+        if (!isActive) {
+            this.classList.add('active');
+            subList.classList.add('active');
+        }
+
+    });
+});
+
+
+
+
 jQuery(function ($) {
 
     $('.owl-carousel').owlCarousel({
@@ -35,5 +76,3 @@ jQuery(function ($) {
 
 });
 
-
-});

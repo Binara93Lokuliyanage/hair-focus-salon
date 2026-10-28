@@ -11,4 +11,7 @@ license: GNU General Public License v2 or later
 @import './assets/css/header.css';
 @import './assets/css/footer.css';
 @import './assets/css/home.css';
-@import './assets/css/cta.comp.css';
+@import './assets/css/services.css';
+@import './assets/css/comp/cta.comp.css';
+@import './assets/css/comp/page-hero.comp.css';
+@import './assets/css/comp/services.comp.css';
