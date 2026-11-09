@@ -68,6 +68,23 @@
     gap: 0.5rem;
 }
 
+.branch-card__hours-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.branch-card__hours-wrapper div {
+    display: flex;
+    flex-direction: column;
+}
+
+.branch-card__hours-wrapper div:nth-child(2) p {
+    color: var(--hf-color-black);
+    font-weight: 600;
+}
+
 /* Responsive Styles */
 @media (max-width: 1205px) {
     .home-hero {
@@ -79,6 +96,10 @@
 @media (max-width: 1066px) {
     .home-hero {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .branch-card {
+        grid-template-columns: 1fr;
     }
 
 }
