@@ -1,7 +1,7 @@
 <?php
 /**
  * Our Salons page.
- * Template Name: Services
+ * Template Name: Our Salons
  *
  * @package HairFocus
  */
