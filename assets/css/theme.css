@@ -140,7 +140,7 @@ li {
   line-height: 1;     
 }
 
-.btn {
+.btn, .wpcf7-submit {
   display: inline-flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
@@ -166,7 +166,7 @@ li {
 }
 
 
-.btn-primary {
+.btn-primary, .wpcf7-submit {
   background-color: var(--hf-color-burgundy);
   color: var(--hf-color-white);
   border: 1px solid var(--hf-color-burgundy);
@@ -224,9 +224,9 @@ li {
 }
 
 .col-2 {
-  display: grid;
+  display: grid !important;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1.5rem !important;
 }
 
 .col-3 {
