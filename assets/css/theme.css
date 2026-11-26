@@ -150,6 +150,7 @@ li {
   font-size: var(--hf-font-size-sm);
   transition: var(--hf-transition);
   font-weight: 400;
+  width: fit-content;
 }
 
 .btn img {
