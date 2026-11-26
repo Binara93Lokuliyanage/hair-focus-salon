@@ -22,6 +22,19 @@
     /* box-shadow: var(--hf-shadow-hover); */
 }
 
+.service-card__extra-data-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.service-card__meta {
+    color: var(--hf-color-burgundy);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .service-card__content {
     display: flex;
     flex-direction: column;

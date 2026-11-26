@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
    
 
 
+
 });
 
 
@@ -34,6 +35,40 @@ servicePriceToggles.forEach(toggle => {
             item.classList.remove('active');
 
             const content = document.getElementById(item.id + '-sub');
+
+            if (content) {
+                content.classList.remove('active');
+            }
+        });
+
+        // Open clicked item only if it was previously closed
+        if (!isActive) {
+            this.classList.add('active');
+            subList.classList.add('active');
+        }
+
+    });
+});
+
+const faqItemsToggle = document.querySelectorAll(
+    '.faq-item__title'
+);
+
+faqItemsToggle.forEach(toggle => {
+    toggle.addEventListener('click', function () {
+
+        const subList = document.getElementById(this.id + '-content');
+        console.log(subList);
+        if (!subList) return;
+
+        // Check whether clicked item is already active
+        const isActive = this.classList.contains('active');
+
+        // Close all currently active items
+        faqItemsToggle.forEach(item => {
+            item.classList.remove('active');
+
+            const content = document.getElementById(item.id + '-content');
 
             if (content) {
                 content.classList.remove('active');
